@@ -22,7 +22,6 @@
   .profile-photo {width: 100%; max-width: 340px; border-radius: 4px;}
   .card {height: 100%; border-top: 4px solid #222;}
   .card h4 {margin-top: 0;}
-  .award-img {width: 100%; border-radius: 3px;}
   .muted {color: #666;}
   .section-note {max-width: 760px;}
   @media (max-width: 700px) {
@@ -40,12 +39,12 @@
   </div>
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#bio" class="w3-bar-item w3-button">Bio</a>
     <a href="#education" class="w3-bar-item w3-button">Education</a>
     <a href="#highlights" class="w3-bar-item w3-button">Highlights</a>
     <a href="#projects" class="w3-bar-item w3-button">Projects</a>
     <a href="#publications" class="w3-bar-item w3-button">Publications</a>
-    <a href="#honors" class="w3-bar-item w3-button">Honors</a>
+    <a href="#awards" class="w3-bar-item w3-button">Awards</a>
   </div>
 </nav>
 
@@ -89,9 +88,9 @@
     </div>
   </div>
 
-  <!-- The About Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="about">
-    <h2>About</h2>
+  <!-- The Bio Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="bio">
+    <h2>Bio</h2>
     <p class="section-note">
       My work connects foundation models, agent algorithms, and industrial AI systems for EDA. I focus on reliable agentic systems for formal verification and testing, including SAT-based reasoning, RTL code generation, bug finding, verifier-guided optimization, and self-evolving agents.
     </p>
@@ -147,21 +146,21 @@
         <div class="w3-card w3-white w3-padding card">
           <h4>LLM and Agents for Industrial EDA</h4>
           <p>Developed industrially viable AI-driven SAT solving and data augmentation methods for formal verification and testing.</p>
-          <p class="muted">Applications include ATPG, LEC, bug finding, model checking, and Verilog generation.</p>
+          <p class="muted">Applications include ATPG, LEC, bug finding, model checking, and Verilog generation; deployed in real chip verification scenarios.</p>
         </div>
       </div>
       <div class="w3-third w3-margin-bottom">
         <div class="w3-card w3-white w3-padding card">
           <h4>Industrial-Grade Agent Deployment</h4>
           <p>Built and maintained agent systems for formal verification, bug finding, code review, and deep research.</p>
-          <p class="muted">Focus areas include tool fusion, collaborative reasoning, recovery, and production reliability.</p>
+          <p class="muted">Achieved up to 8x end-to-end speedup in deep research agents while reducing interaction rounds and tool calls.</p>
         </div>
       </div>
       <div class="w3-third w3-margin-bottom">
         <div class="w3-card w3-white w3-padding card">
           <h4>Agentic RL and Co-design</h4>
           <p>Designed post-training pipelines for large reasoning and agentic models under fixed compute budgets.</p>
-          <p class="muted">Topics include difficulty-aware rewards, pass@k training, verifier-based optimization, long-context modeling, and quantization.</p>
+          <p class="muted">Improved long-context and agent benchmarks by up to 20%; explored quantization and speculative decoding for efficient training and inference.</p>
         </div>
       </div>
     </div>
@@ -176,6 +175,7 @@
       for the full and latest list.
     </p>
 
+    <h4>AI for EDA and Verification</h4>
     <ol>
       <p>
       <li><strong>Conflict-driven Structural Learning Towards Higher Coverage Rate in ATPG</strong>
@@ -193,14 +193,17 @@
       <br><em>ASP-DAC</em> 2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9712573">paper</a></li></p>
 
       <p>
-      <li><strong>A Survey for Solving Mixed Integer Programming via Machine Learning</strong>
-      <br> Jiayi Zhang, Chang Liu, Xijun Li, Hui-Ling Zhen, Mingxuan Yuan, Yawen Li, Junchi Yan
-      <br><em>Neurocomputing</em> 2022 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0925231222014035">paper</a></li></p>
-
-      <p>
       <li><strong>Machine Learning Methods in Solving the Boolean Satisfiability Problem</strong>
       <br> Wenxuan Guo, Junchi Yan, Hui-Ling Zhen, Xijun Li, Mingxuan Yuan, Yaohui Jin
       <br><em>Machine Intelligence Research</em> 2022 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2203.04755.pdf">paper</a></li></p>
+    </ol>
+
+    <h4>Optimization and Learning</h4>
+    <ol>
+      <p>
+      <li><strong>A Survey for Solving Mixed Integer Programming via Machine Learning</strong>
+      <br> Jiayi Zhang, Chang Liu, Xijun Li, Hui-Ling Zhen, Mingxuan Yuan, Yawen Li, Junchi Yan
+      <br><em>Neurocomputing</em> 2022 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0925231222014035">paper</a></li></p>
 
       <p>
       <li><strong>Pareto Multi-task Learning</strong>
@@ -209,45 +212,20 @@
     </ol>
   </div>
 
-  <!-- The Honors Section -->
-  <div class="w3-container w3-padding-32" id="honors">
+  <!-- The Awards Section -->
+  <div class="w3-container w3-padding-32" id="awards">
     <h2>Awards and Honors</h2>
     <div class="w3-row-padding">
       <div class="w3-col" style="width:100%">
         <ol>
-          <p><li><strong>Huawei Gold Medal Individual Award and Gold Medal Team Award</strong> (2022-2024).
-          <br>Recognized among the top 1% contributors.</li></p>
-          <p><li><strong>Field Hero Award for Critical Projects</strong>, 2023, 2024.</li></p>
-          <p><li><strong>Outstanding Business Contribution Award</strong> (2024-2025).</li></p>
+          <p><li><strong>Huawei Gold Medal Team Award</strong>, 2022.</li></p>
+          <p><li><strong>Huawei Gold Medal Individual Award</strong>, 2023 and 2024. (Top 1%) </li></p>
+          <p><li><strong>Field Hero Award for Critical Projects</strong>, 2023 and 2024. (Top 1%) </li></p>
+          <p><li><strong>Outstanding Business Contribution Award</strong>, 2024 and 2025.</li></p>
+          <p><li><strong>Huawei Innovation Pioneer Award</strong>, First Prize in 2022 and Second Prize in 2024.</li></p>
+          <p><li><strong>Huawei Hong Kong Research Center Director Award</strong>, 2024 and 2025.</li></p>
           <p><li><strong>Outstanding Graduate Award</strong>, Beijing University of Posts and Telecommunications.</li></p>
         </ol>
-      </div>
-    </div>
-
-    <div class="w3-row-padding w3-padding-16">
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card w3-white">
-          <img class="award-img" alt="Huawei award photo 1" src="images/award_1.jpg">
-          <div class="w3-container">
-            <p><strong>Gold Medal Recognition</strong></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card w3-white">
-          <img class="award-img" alt="Huawei award photo 2" src="images/award_2.jpg">
-          <div class="w3-container">
-            <p><strong>Critical Project Award</strong></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card w3-white">
-          <img class="award-img" alt="Huawei award photo 3" src="images/award_3.jpg">
-          <div class="w3-container">
-            <p><strong>Patent and Business Contribution</strong></p>
-          </div>
-        </div>
       </div>
     </div>
   </div>
