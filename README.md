@@ -1,5 +1,5 @@
-# AI4Verification
+# Hui-Ling Zhen's Homepage
 
-This is the website source on ai4verification, including our recent projects and some survey on boolean satisfactory and verifcation&testing in EDA.
+This is the source code for Hui-Ling Zhen's personal homepage, including research interests, experience, selected projects, publications, and contact links.
 
-See more info at https://ai4verification.github.io/
+See more info at https://huilingzhen.github.io/
