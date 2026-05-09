@@ -17,13 +17,17 @@
   body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   .profile-links a {margin: 4px 8px; white-space: nowrap; display: inline-block;}
   .hero-title {font-size: 42px; line-height: 1.1; margin-bottom: 8px;}
-  .hero-subtitle {font-size: 18px; color: #555; margin-top: 0;}
+  .hero-subtitle {font-size: 14px; color: #555; margin-top: 0; white-space: nowrap;}
+  .hero-quote {font-size: 16px; color: #444; font-style: italic; margin-top: 18px;}
   .profile-photo {width: 100%; max-width: 340px; border-radius: 4px;}
   .card {height: 100%; border-top: 4px solid #222;}
   .card h4 {margin-top: 0;}
   .award-img {width: 100%; border-radius: 3px;}
   .muted {color: #666;}
   .section-note {max-width: 760px;}
+  @media (max-width: 700px) {
+    .hero-subtitle {white-space: normal;}
+  }
   </style>
 </head>
 
@@ -37,7 +41,7 @@
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#about" class="w3-bar-item w3-button">About</a>
-    <a href="#experience" class="w3-bar-item w3-button">Experience</a>
+    <a href="#education" class="w3-bar-item w3-button">Education</a>
     <a href="#highlights" class="w3-bar-item w3-button">Highlights</a>
     <a href="#projects" class="w3-bar-item w3-button">Projects</a>
     <a href="#publications" class="w3-bar-item w3-button">Publications</a>
@@ -66,9 +70,9 @@
     <div class="w3-row-padding w3-display-container">
       <div class="w3-twothird">
         <h1 class="hero-title"><b>Hui-Ling Zhen</b></h1>
-        <p class="hero-subtitle">Senior Staff Researcher | AI/LLM for EDA | Agent Algorithms | Industrial Verification</p>
+        <p class="hero-subtitle">AI for Verification | AI for EDA | LLM Reasoning | Self-evolve Agent</p>
         <p class="w3-justify">
-          I work on agent algorithms and their industrial applications in formal verification and testing, with a focus on AI/LLM for EDA, long-context training, post-training, agent self-evolution, and large-scale optimization.
+          I work on agent algorithms and their industrial applications in formal verification and testing. I also have extensive experience in LLM reasoning, including long-context training, post-training, agent self-evolution, and large-scale optimization.
         </p>
         <p class="profile-links">
           <a class="w3-button w3-black w3-small" href="mailto:huilingzhen2017@gmail.com">Email</a>
@@ -76,8 +80,8 @@
           <a class="w3-button w3-black w3-small" href="https://scholar.google.com/citations?user=gq29DtwAAAAJ&hl=zh-CN">Google Scholar</a>
           <a class="w3-button w3-black w3-small" href="https://www.linkedin.com/in/hui-ling-zhen-912662158/?locale=en_US">LinkedIn</a>
         </p>
-        <p class="muted">
-          Please feel free to email me if you are interested in AI agents, LLMs for EDA, industrial verification, testing, or large-scale optimization. I am always happy to discuss research ideas and collaborations.
+        <p class="hero-quote">
+          "Do not go gentle into that good night."
         </p>
       </div>
       <div class="w3-third w3-center">
@@ -89,35 +93,20 @@
   <!-- The About Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="about">
     <h2>About</h2>
-    <p class="w3-justify section-note">
-      I am a Senior Staff Researcher at Huawei, working on foundation models, agent algorithms, and industrial AI systems for EDA. My recent work focuses on building reliable agentic systems for formal verification and testing, including SAT-based reasoning, RTL code generation, bug finding, verifier-guided optimization, and self-evolving agents.
+    <p class="section-note">
+      My work connects foundation models, agent algorithms, and industrial AI systems for EDA. I focus on reliable agentic systems for formal verification and testing, including SAT-based reasoning, RTL code generation, bug finding, verifier-guided optimization, and self-evolving agents.
     </p>
-    <p class="w3-justify section-note">
-      My research background spans machine learning, numerical optimization, combinatorial optimization, and industrial verification. I have worked on AI-augmented SAT solvers, data augmentation for EDA, LLM-driven Verilog generation, agent training and deployment, long-context modeling, and post-training methods for reasoning and tool-using agents.
-    </p>
+    <ol>
+      <p><li><strong>2019 - Present, Huawei Noah's Ark Lab / Foundation Model Department</strong>.
+      <br>Research Scientist, 2019-2021; Staff Researcher, 2021-2024; Senior Staff Researcher, 2025-Present.</li></p>
+      <p><li><strong>2017 - 2019, City University of Hong Kong</strong>.
+      <br>Postdoctoral Research Fellow working on optimization, machine learning, and related algorithmic foundations.</li></p>
+    </ol>
   </div>
 
-  <!-- The Experience Section -->
-  <div class="w3-container w3-padding-32" id="experience">
-    <h2>Experience</h2>
-    <div class="w3-row-padding">
-      <div class="w3-half">
-        <div class="w3-card w3-white w3-padding card">
-          <h4>Huawei Noah's Ark Lab / Foundation Model Department</h4>
-          <p class="muted">Hong Kong | 2019 - Present</p>
-          <p>Senior Staff Researcher, 2025-Present; Staff Researcher, 2021-2024; Research Scientist, 2019-2021.</p>
-        </div>
-      </div>
-      <div class="w3-half">
-        <div class="w3-card w3-white w3-padding card">
-          <h4>City University of Hong Kong</h4>
-          <p class="muted">Hong Kong | 2017 - 2019</p>
-          <p>Postdoctoral Research Fellow working on optimization, machine learning, and related algorithmic foundations.</p>
-        </div>
-      </div>
-    </div>
-
-    <h2 class="w3-padding-top-24">Education</h2>
+  <!-- The Education Section -->
+  <div class="w3-container w3-padding-32" id="education">
+    <h2>Education</h2>
     <ol>
       <p><li><strong>Ph.D. in Numerical Optimization</strong>, Beijing University of Posts and Telecommunications, 2013 - 2017.
       <br>Outstanding Graduate Award.</li></p>
