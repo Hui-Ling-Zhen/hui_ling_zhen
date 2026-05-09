@@ -23,6 +23,9 @@
   .card {height: 100%; border-top: 4px solid #222;}
   .card h4 {margin-top: 0;}
   .muted {color: #666;}
+  .my-name {color: #444; font-weight: bold;}
+  .first-highlight {color: #c0392b; font-weight: bold;}
+  .tech-highlight {color: #1f5f99; font-weight: bold;}
   .section-note {max-width: 760px;}
   @media (max-width: 700px) {
     .hero-subtitle {white-space: normal;}
@@ -40,8 +43,7 @@
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#experience" class="w3-bar-item w3-button">Experience</a>
-    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-    <a href="#publications" class="w3-bar-item w3-button">Publications</a>
+    <a href="#research" class="w3-bar-item w3-button">Research</a>
     <a href="#awards" class="w3-bar-item w3-button">Awards</a>
   </div>
 </nav>
@@ -68,9 +70,9 @@
         <h1 class="hero-title"><b>Hui-Ling Zhen</b></h1>
         <p class="hero-subtitle">AI for Verification | AI for EDA | LLM Reasoning | Self-evolve Agent</p>
         <p class="w3-justify">
-          I obtained my Ph.D. from Beijing University of Posts and Telecommunications in 2016. I work on agent algorithms and their industrial applications in formal verification and testing, with extensive experience in LLM reasoning, especially long-context training and post-training. 
+          I am currently a Senior Research Staff member at Huawei at the principal level. My work focuses on <strong>agent algorithms</strong> and their applications in <strong>industrial EDA</strong>, including <strong>ATPG</strong>, <strong>LEC</strong>, <strong>formal verification</strong>, and <strong>coverage-guided testbench generation</strong>. Before joining Huawei in 2019, I was a Postdoctoral Research Fellow at City University of Hong Kong, where I worked on <strong>learning to optimize</strong> and solver applications in <strong>large-scale industrial problems</strong>. Earlier, I received my Ph.D. from Beijing University of Posts and Telecommunications in 2016. 
           <br><br>
-          I am particularly interested in <strong>agent algorithms</strong> and their applications to <strong>complex optimization problems</strong>, such as building <strong>agents with agents</strong> to solve <strong>industrial EDA formal verification</strong> problems. I have a sustained passion for <strong>self-evolving agents</strong>.
+          I am deeply interested in <strong>agent algorithms</strong>, <strong>complex optimization</strong>, and building <strong>agents with agents</strong> for industrial verification. If you share similar interests, please feel free to reach out. 
         </p>
         <p class="profile-links">
           <a class="w3-button w3-black w3-small" href="mailto:huilingzhen2017@gmail.com">Email</a>
@@ -79,7 +81,7 @@
           <a class="w3-button w3-black w3-small" href="https://www.linkedin.com/in/hui-ling-zhen-912662158/?locale=en_US">LinkedIn</a>
         </p>
         <p class="hero-quote">
-          "Winning is not everything, but wanting to win is—and playing with all your heart." "Do not go gentle into that good night."
+          "Do not go gentle into that good night."
         </p>
       </div>
       <div class="w3-third w3-center">
@@ -92,85 +94,89 @@
   <div class="w3-container w3-light-grey w3-padding-32" id="experience">
     <h2>Experience</h2>
     <ol>
-      <p><li><strong>2019 - Present, Huawei Noah's Ark Lab / Foundation Model Department</strong>.
-      <br>Research Scientist, 2019-2021; Staff Researcher, 2021-2024; Senior Staff Researcher, 2025-Present.</li></p>
-      <p><li><strong>2017 - 2019, City University of Hong Kong</strong>.
-      <br>Postdoctoral Research Fellow working on optimization, machine learning, and related algorithmic foundations.</li></p>
+      <li><strong>2019 - Present, Huawei Noah's Ark Lab / Foundation Model Department</strong>.
+      <br>Research Scientist, 2019-2021; Staff Researcher, 2021-2024; Senior Staff Researcher, 2025-Present.</li>
+      <li><strong>2017 - 2019, City University of Hong Kong</strong>.
+      <br>Postdoctoral Research Fellow working on optimization, machine learning, and related algorithmic foundations.</li>
     </ol>
   </div>
 
-  <!-- The Projects Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h2>Selected Projects</h2>
-    <div class="w3-row-padding">
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card w3-white w3-padding card">
-          <h4>LLM and Agents for Industrial EDA</h4>
-          <p>Developed industrially viable AI-driven SAT solving and data augmentation methods for formal verification and testing.</p>
-          <p class="muted">Applications include ATPG, LEC, bug finding, model checking, and Verilog generation; deployed in real chip verification scenarios.</p>
-        </div>
-      </div>
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card w3-white w3-padding card">
-          <h4>Industrial-Grade Agent Deployment</h4>
-          <p>Built and maintained agent systems for formal verification, bug finding, code review, and deep research.</p>
-          <p class="muted">Achieved up to 8x end-to-end speedup in deep research agents while reducing interaction rounds and tool calls.</p>
-        </div>
-      </div>
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card w3-white w3-padding card">
-          <h4>Agentic RL and Co-design</h4>
-          <p>Designed post-training pipelines for large reasoning and agentic models under fixed compute budgets.</p>
-          <p class="muted">Improved long-context and agent benchmarks by up to 20%; explored quantization and speculative decoding for efficient training and inference.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- The Publications Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="publications">
-    <h2>Selected Publications</h2>
+  <!-- The Research Section -->
+  <div class="w3-container w3-padding-32" id="research">
+    <h2>Selected Research</h2>
     <p class="w3-left-align section-note" style="line-height:200%">
-      A selected list of my work on optimization, AI for EDA, SAT, and learning-based decision making. Please see my
+      Selected projects and related papers. Please see my
       <a style="color: #447ec9" href="https://scholar.google.com/citations?user=gq29DtwAAAAJ&hl=zh-CN">Google Scholar</a>
-      for the full and latest list.
+      for the full and latest publication list.
     </p>
 
-    <h4>AI for EDA and Verification</h4>
-    <ol>
-      <p>
-      <li><strong>Conflict-driven Structural Learning Towards Higher Coverage Rate in ATPG</strong>
-      <br> Hui-Ling Zhen, Naixing Wang, Junhua Huang, Xinyue Huang, Mingxuan Yuan, Yu Huang
-      <br><em>ETS</em> 2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2303.02290.pdf">paper</a></li></p>
+    <div class="w3-card w3-white w3-padding card w3-margin-bottom">
+      <h3>AI for EDA (Formal Verification & Testing)</h3>
+      <h4>Highlights</h4>
+      <p>Developed AI-driven SAT solving, preprocessing, conflict management, data augmentation, and learning-aided verification methods for industrial EDA workflows. Applications include ATPG, LEC, model checking, bug finding, and coverage improvement in real chip verification scenarios.</p>
+      <ul>
+        <li><span class="first-highlight">First industrial-grade learning-driven solver enhancement:</span> explored learning-driven ways to modify and enhance solver internals for <span class="tech-highlight">industrial verification</span> problems, improving practical solving performance beyond black-box solver selection.</li>
+        <li><span class="first-highlight">First industrial-grade GAN-based data synthesis for EDA:</span> introduced generative data synthesis to improve the robustness of AI-driven verification methods under the data scarcity common in <span class="tech-highlight">industrial EDA</span> scenarios.</li>
+        <li><span class="first-highlight">First industrial-grade circuit-level SAT direction:</span> moved beyond conventional CNF-centric modeling by constructing <span class="tech-highlight">circuit-level SAT</span> solving directly over circuits, enabling ATPG to serve as a solver for industrial LEC and contribute meaningfully to datapath proofs.</li>
+      </ul>
+      <h4>Related Papers</h4>
+      <ol>
+        <li><strong>Accelerate SAT-Based ATPG via Preprocessing and New Conflict Management Heuristics</strong>, <em>ASP-DAC</em> 2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9712573">paper</a></li>
+        <li><strong>Neural Fault Analysis for SAT-Based ATPG</strong>, <em>ITC</em> 2022 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9983862">paper</a></li>
+        <li><strong>Conflict-Driven Structural Learning Towards Higher Coverage Rate in ATPG</strong>, <em>ETS</em> 2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2303.02290.pdf">paper</a></li>
+        <li><strong>HardSATGEN: Understanding the Difficulty of Hard SAT Formula Generation and a Strong Structure-Hardness-Aware Baseline</strong>, <em>KDD</em> 2023 | <a style="color: #447ec9" href="https://dl.acm.org/doi/pdf/10.1145/3580305.3599837">paper</a></li>
+        <li><strong>HardCore Generation: Generating Hard UNSAT Problems for Data Augmentation</strong>, <em>NeurIPS</em> 2024 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper_files/paper/2024/file/722968fb52c75947371c6b02a58c959a-Paper-Conference.pdf">paper</a></li>
+        <li><strong>DeepGate2: Functionality-Aware Circuit Representation Learning</strong>, <em>ICCAD</em> 2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2305.16373">paper</a></li>
+        <li><strong>DiffSAT: Differential MaxSAT Layer for SAT Solving</strong>, <em>ICCAD</em> 2024 | <a style="color: #447ec9" href="https://dl.acm.org/doi/pdf/10.1145/3676536.3676748">paper</a></li>
+        <li><strong>Logic Optimization Meets SAT: A Novel Framework for Circuit-SAT Solving</strong>, <em>DAC</em> 2025 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2403.19446">paper</a></li>
+      </ol>
+    </div>
 
-      <p>
-      <li><strong>Neural Fault Analysis for SAT-based ATPG</strong>
-      <br> Junhua Huang, Hui-Ling Zhen, Naixing Wang, Hui Mao, Mingxuan Yuan, Yu Huang
-      <br><em>ITC</em> 2022 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9983862">paper</a></li></p>
+    <div class="w3-card w3-white w3-padding card w3-margin-bottom">
+      <h3>LLM for Verification & Agentic Verification</h3>
+      <h4>Highlights</h4>
+      <p>Built LLM-driven and agentic verification workflows for Verilog generation, bug finding, tool invocation, verifier feedback, and coverage-guided testbench generation.</p>
+      <h4>Related Papers</h4>
+      <ol>
+        <li><strong>BetterV: Controlled Verilog Generation with Discriminative Guidance</strong>, <em>ICML</em> 2024 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2402.03375">paper</a>
+        <br>Developed a <span class="first-highlight">generator-discriminator</span> training framework for 7B RTL code generation; even two years after release, it remains a same-size <span class="first-highlight">SOTA for correctness</span> and outperforms several models larger than 14B.</li>
+        <li><strong>DiLA: Enhancing LLM Tool Learning with Differential Logic Layer</strong>, <em>KDD</em> 2026 | <a style="color: #447ec9" href="https://dl.acm.org/doi/pdf/10.1145/3770854.3780224">paper</a>
+        <br>Introduced a way to make the <span class="first-highlight">solver act as a differentiable layer</span> that interacts with the language model, outperforming tool-call-only solver integration and <span class="first-highlight">improving success rates</span> across multiple industrial scenarios.</li>
+        <li><strong>SATformer: Transformer-Based UNSAT Core Learning</strong>, <em>ICCAD</em> 2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2209.00953">paper</a></li>
+      </ol>
+    </div>
 
-      <p>
-      <li><strong>Accelerate SAT-based ATPG via Preprocessing and New Conflict Management Heuristics</strong>
-      <br> Junhua Huang, Hui-Ling Zhen, Naixing Wang, Mingxuan Yuan, Hui Mao, Yu Huang, Jiping Tao
-      <br><em>ASP-DAC</em> 2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9712573">paper</a></li></p>
+    <div class="w3-card w3-white w3-padding card w3-margin-bottom">
+      <h3>LLM Reasoning & Agentic LLMs</h3>
+      <h4>Highlights</h4>
+      <p>Worked on long-context training, post-training, agent self-evolution, reasoning data construction, verifier-based optimization, and training-inference co-design for agentic LLMs. Achieved up to 8x end-to-end speedup in deep research agents and up to 20% improvement on long-context and agent benchmarks.</p>
+      <h4>Related Papers</h4>
+      <ol>
+        <li><strong>LLMShare: Optimizing LLM Inference Serving with Hardware Architecture Exploration</strong>, <em>DAC</em> 2025 | <a style="color: #447ec9" href="https://shipxu123.github.io/papers/C15-DAC2025-LLMShare.pdf">paper</a></li>
+        <li><strong>TrimR: Verifier-Based Training-Free Thinking Compression for Efficient Test-Time Scaling</strong>, <em>ICLR</em> 2025 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2505.17155">paper</a></li>
+        <li><strong>Accelerating Large Language Model Reasoning via Speculative Search</strong>, <em>ICML</em> 2025 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2505.02865">paper</a></li>
+        <li><strong>HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking</strong>, <em>ICML</em> 2025 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2505.02322">paper</a></li>
+        <li><strong>DLLM Agent: See Farther, Run Faster</strong>, <em>arXiv</em> 2026 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2602.07451">paper</a></li>
+        <li><strong>SCOPE: Prompt Evolution for Enhancing Agent Effectiveness</strong>, <em>arXiv</em> 2025 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2512.15374">paper</a></li>
+        <li><strong>Towards Efficient Agents: A Co-Design of Inference Architecture and System</strong>, <em>arXiv</em> 2025 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2512.18337">paper</a></li>
+        <li><strong>MOSS: Efficient and Accurate FP8 LLM Training with Microscaling and Automatic Scaling</strong>, <em>arXiv</em> 2025 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2511.05811">paper</a></li>
+        <li><strong>CMoE: Fast Carving of Mixture-of-Experts for Efficient LLM Inference</strong>, <em>ACL</em> 2026 | <a style="color: #447ec9" href="https://arxiv.org/abs/2502.04416">paper</a></li>
+      </ol>
+    </div>
 
-      <p>
-      <li><strong>Machine Learning Methods in Solving the Boolean Satisfiability Problem</strong>
-      <br> Wenxuan Guo, Junchi Yan, Hui-Ling Zhen, Xijun Li, Mingxuan Yuan, Yaohui Jin
-      <br><em>Machine Intelligence Research</em> 2022 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2203.04755.pdf">paper</a></li></p>
-    </ol>
-
-    <h4>Optimization and Learning</h4>
-    <ol>
-      <p>
-      <li><strong>A Survey for Solving Mixed Integer Programming via Machine Learning</strong>
-      <br> Jiayi Zhang, Chang Liu, Xijun Li, Hui-Ling Zhen, Mingxuan Yuan, Yawen Li, Junchi Yan
-      <br><em>Neurocomputing</em> 2022 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0925231222014035">paper</a></li></p>
-
-      <p>
-      <li><strong>Pareto Multi-task Learning</strong>
-      <br> Xi Lin, Hui-Ling Zhen, Zhenhua Li, Qing-Fu Zhang, Sam Kwong
-      <br><em>NeurIPS</em> 2019 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2019/file/685bfde03eb646c27ed565881917c71c-Paper.pdf">paper</a></li></p>
-    </ol>
+    <div class="w3-card w3-white w3-padding card w3-margin-bottom">
+      <h3>Learning to Optimize and Solver Intelligence</h3>
+      <h4>Highlights</h4>
+      <p>Studied learning-to-optimize methods, solver intelligence, and machine learning techniques for large-scale industrial optimization and mixed-integer programming.</p>
+      <h4>Related Papers</h4>
+      <ol>
+        <li><strong>Pareto Multi-Task Learning</strong>, <em>NeurIPS</em> 2019 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2019/file/685bfde03eb646c27ed565881917c71c-Paper.pdf">paper</a></li>
+        <li><strong>Learning to Select Cuts for Efficient Mixed-Integer Programming</strong>, <em>Pattern Recognition</em> 2022 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2105.13645">paper</a></li>
+        <li><strong>A Survey for Solving Mixed Integer Programming via Machine Learning</strong>, <em>Neurocomputing</em> 2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2203.02878">paper</a></li>
+        <li><strong>Bilevel Learning for Large-Scale Flexible Flow Shop Scheduling</strong>, <em>Computers & Industrial Engineering</em> 2022 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/abs/pii/S0360835222002108">paper</a></li>
+        <li><strong>Machine Learning Methods in Solving the Boolean Satisfiability Problem</strong>, <em>Machine Intelligence Research</em> 2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2203.04755">paper</a></li>
+      </ol>
+    </div>
   </div>
 
   <!-- The Awards Section -->
@@ -179,13 +185,13 @@
     <div class="w3-row-padding">
       <div class="w3-col" style="width:100%">
         <ol>
-          <p><li><strong>Huawei Gold Medal Team Award</strong>, 2022.</li></p>
-          <p><li><strong>Huawei Gold Medal Individual Award</strong>, 2023 and 2024. (Top 1%) </li></p>
-          <p><li><strong>Field Hero Award for Critical Projects</strong>, 2023 and 2024. (Top 1%) </li></p>
-          <p><li><strong>Outstanding Business Contribution Award</strong>, 2024 and 2025.</li></p>
-          <p><li><strong>Huawei Innovation Pioneer Award</strong>, First Prize in 2022 and Second Prize in 2024.</li></p>
-          <p><li><strong>Huawei Hong Kong Research Center Director Award</strong>, 2024 and 2025.</li></p>
-          <p><li><strong>Outstanding Graduate Award</strong>, Beijing University of Posts and Telecommunications.</li></p>
+          <li><strong>Huawei Gold Medal Team Award</strong>, 2022.</li>
+          <li><strong>Huawei Gold Medal Individual Award</strong>, 2023 and 2024 (Top 1%).</li>
+          <li><strong>Field Hero Award for Critical Projects</strong>, 2023 and 2024 (Top 1%).</li>
+          <li><strong>Outstanding Business Contribution Award</strong>, 2024 and 2025.</li>
+          <li><strong>Huawei Innovation Pioneer Award</strong>, First Prize in 2022 and Second Prize in 2024.</li>
+          <li><strong>Huawei Hong Kong Research Center Director Award</strong>, 2024 and 2025.</li>
+          <li><strong>Outstanding Graduate Award</strong>, Beijing University of Posts and Telecommunications.</li>
         </ol>
       </div>
     </div>
