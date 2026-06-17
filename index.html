@@ -111,6 +111,29 @@
     </p>
 
     <div class="w3-card w3-white w3-padding card w3-margin-bottom">
+      <h3>LLM for Verification & Agentic Verification</h3>
+      <h4>Highlights</h4>
+      <p>Built LLM-driven and agentic verification workflows for Verilog generation, bug finding, tool invocation, verifier feedback, and coverage-guided testbench generation.</p>
+      <h4>Selected Projects</h4>
+      <ul>
+        <li><strong>Verilog-Evolve: Feedback-Driven and Skill-Evolving Verilog Generation</strong>, <em>arXiv</em> 2026 | <a style="color: #447ec9" href="https://arxiv.org/html/2605.26498">paper</a> | <a style="color: #447ec9" href="https://github.com/Hui-Ling-Zhen/verilog_evolve">code</a>
+        <br>A tool-grounded self-evolution framework for Verilog generation, using simulator, synthesis, timing, downstream feedback, and reusable RTL skills to improve generated RTL.</li>
+        <li><strong>Agentic ATPG</strong> | <a style="color: #447ec9" href="https://github.com/Hui-Ling-Zhen/ATPG-Agent">code</a>
+        <br>The first agent-powered ATPG algorithm. Agent can first optimize and evaluate command-line configurations from outside the tool, then later make controlled white-box changes to the core algorithm once the evaluation loop is reliable.</li>
+        <li><strong>Agentic Verification</strong> | <a style="color: #447ec9" href="https://github.com/Hui-Ling-Zhen/Agentic-Verification">code</a>
+        <br>LLM-powered Agentic Verification for hardware. The core bilevel architecture is constructed by CodeX and veriagent (our runtime). VeriAgent does not try to replace Codex as a general-purpose coding agent. Instead, it supervises Codex with explicit workflow stages, deterministic Checkers, verification-domain MCP tools, human checkpoints, and a measurable run_manifest.json. </li>
+      </ul>
+      <h4>Related Papers</h4>
+      <ol>
+        <li><strong>BetterV: Controlled Verilog Generation with Discriminative Guidance</strong>, <em>ICML</em> 2024 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2402.03375">paper</a>
+        <br>Developed a <span class="first-highlight">generator-discriminator</span> training framework for 7B RTL code generation; even two years after release, it remains a same-size <span class="first-highlight">SOTA for correctness</span> and outperforms several models larger than 14B.</li>
+        <li><strong>DiLA: Enhancing LLM Tool Learning with Differential Logic Layer</strong>, <em>KDD</em> 2026 | <a style="color: #447ec9" href="https://dl.acm.org/doi/pdf/10.1145/3770854.3780224">paper</a>
+        <br>Introduced a way to make the <span class="first-highlight">solver act as a differentiable layer</span> that interacts with the language model, outperforming tool-call-only solver integration and <span class="first-highlight">improving success rates</span> across multiple industrial scenarios.</li>
+        <li><strong>SATformer: Transformer-Based UNSAT Core Learning</strong>, <em>ICCAD</em> 2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2209.00953">paper</a></li>
+      </ol>
+    </div>
+
+    <div class="w3-card w3-white w3-padding card w3-margin-bottom">
       <h3>AI for EDA (Formal Verification & Testing)</h3>
       <h4>Highlights</h4>
       <p>Developed AI-driven SAT solving, preprocessing, conflict management, data augmentation, and learning-aided verification methods for industrial EDA workflows. Applications include ATPG, LEC, model checking, bug finding, and coverage improvement in real chip verification scenarios.</p>
@@ -132,27 +155,7 @@
       </ol>
     </div>
 
-    <div class="w3-card w3-white w3-padding card w3-margin-bottom">
-      <h3>LLM for Verification & Agentic Verification</h3>
-      <h4>Highlights</h4>
-      <p>Built LLM-driven and agentic verification workflows for Verilog generation, bug finding, tool invocation, verifier feedback, and coverage-guided testbench generation.</p>
-      <h4>Selected Projects</h4>
-      <ul>
-        <li><strong>Verilog-Evolve: Feedback-Driven and Skill-Evolving Verilog Generation</strong>, <em>arXiv</em> 2026 | <a style="color: #447ec9" href="https://arxiv.org/html/2605.26498">paper</a> | <a style="color: #447ec9" href="https://github.com/Hui-Ling-Zhen/verilog_evolve">code</a>
-        <br>A tool-grounded self-evolution framework for Verilog generation, using simulator, synthesis, timing, downstream feedback, and reusable RTL skills to improve generated RTL.</li>
-        <li><strong>Dr. RTL Codex: Agentic RTL Optimization Across Harnesses</strong> | <a style="color: #447ec9" href="https://github.com/Hui-Ling-Zhen/dr-rtl-codex">code</a>
-        <br>A Codex-adapted agentic RTL optimization workflow that iteratively analyzes timing reports, transforms RTL, runs synthesis and SEC, and promotes the best equivalent version.</li>
-      </ul>
-      <h4>Related Papers</h4>
-      <ol>
-        <li><strong>BetterV: Controlled Verilog Generation with Discriminative Guidance</strong>, <em>ICML</em> 2024 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2402.03375">paper</a>
-        <br>Developed a <span class="first-highlight">generator-discriminator</span> training framework for 7B RTL code generation; even two years after release, it remains a same-size <span class="first-highlight">SOTA for correctness</span> and outperforms several models larger than 14B.</li>
-        <li><strong>DiLA: Enhancing LLM Tool Learning with Differential Logic Layer</strong>, <em>KDD</em> 2026 | <a style="color: #447ec9" href="https://dl.acm.org/doi/pdf/10.1145/3770854.3780224">paper</a>
-        <br>Introduced a way to make the <span class="first-highlight">solver act as a differentiable layer</span> that interacts with the language model, outperforming tool-call-only solver integration and <span class="first-highlight">improving success rates</span> across multiple industrial scenarios.</li>
-        <li><strong>SATformer: Transformer-Based UNSAT Core Learning</strong>, <em>ICCAD</em> 2023 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2209.00953">paper</a></li>
-      </ol>
-    </div>
-
+    
     <div class="w3-card w3-white w3-padding card w3-margin-bottom">
       <h3>LLM Reasoning & Agentic LLMs</h3>
       <h4>Highlights</h4>
